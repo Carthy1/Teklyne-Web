@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+h1{
+    color: #fff;
+}
+.slogan{
+    color: #fff;
+}
+/* Sticky Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #5d84f1;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+nav .close-btn {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    margin: 10px;
+}
+
+.hero {
+    text-align: center;
+    background: #333232;
+    padding: 60px 20px;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #1a9dd6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn-secondary {
+    background: #333;
+}
+
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service {
+    background: #eee;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #1a9dd6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+footer .socials a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+    nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100%;
+        width: 250px;
+        background: #333;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 60px;
+        transition: left 0.3s ease-in-out;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 20px 0;
+        width: 100%;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav.active {
+        left: 0;
+    }
+
+    nav .close-btn {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+}
+.vmg-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.vmg-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.vmg-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.vmg-icon {
+    font-size: 50px;
+    color: #FF6600;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    color: #FF6600;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.read-more:hover {
+    color: #333;
+    transform: translateX(5px);
+}
+
+
